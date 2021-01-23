@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.ucash_test.lirongyunindialoan"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+//    lintOptions {
+//        abortOnError false
+//    }
+
+    //关闭不需要task
+    tasks.whenTaskAdded { task ->
+        if(task.name.contains("lint")
+                || task.name.contains("mockableAndroidJar")
+                || task.name.contains("UnintTest")
+                || task.name.contains("AndroidTest")
+//                || task.name.contains("Aidl")
+//                || task.name.contains("Ndk")
+//                || task.name.contains("Jni")
+        ){
+            task.enabled = false
+        }
+    }
+
+
+    // dex预处理和最多开启线程数量
+    dexOptions{
+        //   incremental true
+        preDexLibraries true
+        maxProcessCount 6
+    }
+
+
+    //禁止png crunching， 禁止构建时默认压缩图片的方法
+    aaptOptions {
+        cruncherEnabled false
+    }
+
+    buildTypes {
+//        release {
+//            zipAlignEnabled true
+//            shrinkResources true
+//            minifyEnabled true
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            signingConfig signingConfigs.release
+//            buildConfigField "String", "HTTP_HOST", '"https://server.cosmiccash888.com"'// 正式环境 API 接口地址
+//            buildConfigField "String", "HTTP_HOST", '"http://n208188y70.zicp.vip:59511/"'// 测试环境 API 接口地址
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+
+
+        debug {
+            buildConfigField "boolean", "IS_TEST", "true"
+//            signingConfig signingConfigs.release
+//            buildConfigField "String", "HTTP_HOST", '"https://server.cosmiccash888.com"'// 正式环境 API 接口地址
+//            buildConfigField "String", "HTTP_HOST_TEST", '"http://n208188y70.zicp.vip:59511/"'// 测试环境 API 接口地址
+            buildConfigField "String", "HTTP_HOST_TEST2", '"http://n208188y70.zicp.vip/"'// 测试环境 API 接口地址
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'org.jetbrains:annotations:15.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //权限申请包
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1' //上面的包依赖于这个包
+
+    //蓝光OCR
+    implementation project(path: ':DFLivenessLibrary')
+    implementation project(path: ':OCRScanLibrary')
+
+
+    //dagger2
+    implementation 'com.google.dagger:dagger:2.21'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
+    implementation 'com.google.dagger:dagger-android:2.21'
+    implementation 'com.google.dagger:dagger-android-support:2.21'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.21'
+
+    //retrafit2
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+}

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "HOST_URL", "\"https://cloudapi.accuauth.com\""
+            buildConfigField "String", "INTEGRATED_DOCUMENT", "\"http://devcenter.cloud.accuauth.com/liveness/Android/silent/SUMMARY.html\""
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "HOST_URL", "\"https://cloudapi.accuauth.com\""
+            buildConfigField "String", "INTEGRATED_DOCUMENT", "\"http://devcenter.cloud.accuauth.com/liveness/Android/silent/SUMMARY.html\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '30.0.2'
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    api(name: 'DFLivenessSDK', ext: 'aar')
+}

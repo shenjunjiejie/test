@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundRectImageView">
+        <attr name="round_rect_text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4B66EE</color>
+    <color name="colorPrimaryDark">#4B66EE</color>
+    <!-- mainColor -->
+    <color name="colorAccent">#B43130</color>
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <!-- 重要文字 -->
+    <color name="font_c333">#333333</color>
+    <!-- 普通文字 -->
+    <color name="font_c555">#555555</color>
+    <!-- 次要文字 -->
+    <color name="font_c999">#999999</color>
+    <!-- 轻量级文字 -->
+    <color name="font_cbbb">#bbbbbb</color>
+    <!-- 轻量级文字 -->
+    <color name="font_lighter">#dadada</color>
+    <!--一级分割线 -->
+    <color name="having_line">#dddddd</color>
+    <!-- 二级分割线 -->
+    <color name="having_line2">#eeeeee</color>
+    <!-- 背景 -->
+    <color name="main_bg">#f7f7f7</color>
+
+    <color name="nav_select_color">#B43130</color>
+    <color name="theme_color">#B43130</color>
+
+
+
+
+</resources>

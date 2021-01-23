@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <com.dfsdk.ocr.scan.camera.FixedAspectRatioFrameLayout
+        android:id="@+id/id_frfl_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/id_sv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.dfsdk.ocr.scan.view.DFScanOverlayView
+            android:id="@+id/id_scan_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scan_overlay_bg_color="@color/ocr_scan_overlay_bg"
+            app:scan_overlay_laser_color="@color/ocr_scan_laser"
+            app:scan_overlay_margin_top="150dp"
+            app:scan_overlay_round_radius="10dp"
+            app:scan_overlay_scan_line_height="40dp"
+            app:scan_overlay_scan_rect_height="250dp" />
+    </com.dfsdk.ocr.scan.camera.FixedAspectRatioFrameLayout>
+
+    <include
+        android:id="@+id/id_include_title"
+        layout="@layout/ocr_scan_include_title" />
+
+    <TextView
+        android:id="@+id/id_tv_scan_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="430dp"
+        android:gravity="center"
+        android:textSize="@dimen/ocr_scan_small_text" />
+
+    <ImageView
+        android:id="@+id/id_iv_debug"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp" />
+
+    <include
+        android:id="@+id/id_include_loading"
+        layout="@layout/ocr_scan_dialog_loading"
+        android:visibility="gone"/>
+
+</RelativeLayout>

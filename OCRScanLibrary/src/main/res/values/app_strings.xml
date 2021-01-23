@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">OCRScanDemo</string>
+    <string name="app_home_start_btn_card">Auto Scan</string>
+    <string name="app_activity_result_auto_scan_title">Auto Scan</string>
+    <string name="app_sdk_integrated_doc">SDK Docs</string>
+    <string name="app_card_not_target">Not a target</string>
+    <string name="app_card_not_target_document">document</string>
+    <string name="app_text_extracted">Text Extracted</string>
+    <string name="app_text_extracted_failed">Text extracted failed</string>
+    <string name="app_try_again">Try again</string>
+
+    <string name="app_card_type">Card Type</string>
+    <string name="app_card_side">Card Side</string>
+    <string name="app_card_aadhaar">Aadhaar</string>
+    <string name="app_card_pan">Pan</string>
+    <string name="app_card_side_front">Front side</string>
+    <string name="app_card_side_back">Back side</string>
+
+    <string name="app_aadhar_name">Name</string>
+    <string name="app_aadhar_mother_name">Mother Name</string>
+    <string name="app_aadhar_father_name">Father Name</string>
+    <string name="app_aadhar_date_of_birth">Date of Birth</string>
+    <string name="app_aadhar_gender">Gender</string>
+    <string name="app_aadhar_number">Aadhaar Number</string>
+    <string name="app_aadhar_phone_number">Phone Number</string>
+    <string name="app_aadhar_vid">Vid</string>
+    <string name="app_aadhar_s_o">S/O</string>
+    <string name="app_aadhar_d_o">D/O</string>
+    <string name="app_aadhar_c_o">C/O</string>
+    <string name="app_aadhar_w_o">W/O</string>
+    <string name="app_aadhar_h_o">H/O</string>
+    <string name="app_aadhar_address">Address</string>
+    <string name="app_aadhar_line_1">Line 1</string>
+    <string name="app_aadhar_line_2">Line 2</string>
+    <string name="app_aadhar_city">City</string>
+    <string name="app_aadhar_state">State</string>
+    <string name="app_aadhar_pin">Pin</string>
+
+    <string name="app_pan_number">Account Number</string>
+    <string name="app_pan_name">Name</string>
+    <string name="app_pan_father_name">Father’s Name</string>
+    <string name="app_pan_date_of_issue">Date of Issue</string>
+
+
+    <string name="app_main_description_1">FOR</string>
+    <string name="app_main_description_2">Aadhaar Front side &#038; Back side</string>
+    <string name="app_main_description_3">Pan Front side</string>
+</resources>

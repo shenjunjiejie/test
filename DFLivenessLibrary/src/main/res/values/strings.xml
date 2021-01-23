@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Silent Liveness</string>
+    <string name="string_activity_bottom_liveness">Liveness</string>
+    <string name="string_activity_bottom_silentliveness">Silent Liveness</string>
+    <string name="string_liveness_has_face_and_holdstill_hint">Please hold still</string>
+    <string name="string_liveness_no_face_hint">Please place your face inside the circle</string>
+    <string name="liveness_face_not_valid_hint">Please move away from the screen</string>
+    <string name="string_no_match_result_found">The result type is not found, please check again.</string>
+    <string name="string_try_again">Try again</string>
+    <string name="string_liveness_failed">Liveness failed</string>
+    <string name="string_liveness_success">Liveness verified</string>
+    <string name="string_result_text_extracted">Text extracted</string>
+    <string name="string_result_text_extracted_failed">Text extracted failed</string>
+    <string name="string_result_face_match_failed">Face match failed</string>
+    <string name="string_result_liveness_failed">Liveness failed</string>
+    <string name="string_result_liveness_no_anti_hack">No Anti Hack</string>
+    <string name="string_result_face_match_success">Face match success</string>
+    <string name="string_result_liveness_success">Liveness verified</string>
+    <string name="string_result_face_match_vs">VS</string>
+    <string name="string_card_type_error">Card type error</string>
+    <string name="app_image_error">error</string>
+    <string name="app_version_format">Version:%s</string>
+    <string name="app_sdk_integrated_doc">SDK Docs</string>
+</resources>

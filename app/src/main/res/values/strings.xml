@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cash</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="hint_read_policy">Please read and agree to the terms of the Service Privacy Policy</string>
+    <string name="show_read_policy">I have read and agreed to the Terms of Service Privacy Policy.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_me">Me</string>
+    <string name="str_loan_home_prod_memo"><![CDATA[Low interest & High pass rate]]></string>
+    <string name="facebook_app_id">321529258984901</string>
+    <string name="fb_login_protocol_scheme">fb321529258984901</string>
+    <string name="loan_kill_process">Press again to exit the Application</string>
+
+
+
+    <string name="xxl_working_phone_meg">We will collect and monitor specific information about your mobile phone,such as device brand and phone model.These information helps us uniquely identify users in order to detect and prevent any unauthorized device from acting on your behalf,which enables us to better detect fraud and manage risk</string>
+    <string name="xxl_working_phone_title">Phone State</string>
+    <string name="xxl_working_camera_msg">Camera access is required so that users can easily scan or capture identity files,etc,and save time by allowing us to autornaticassy fill in the date we need,and help improve users\' application procedure and experience</string>
+    <string name="xxl_working_camera_title">Camera</string>
+    <string name="xxl_working_contact_msg">The NBFC loan process and guideline require us to verify reference material.This function enables us to do this ;with this permission ,we can select contacts directly from the contact list</string>
+    <string name="xxl_working_contact_title">Contact</string>
+    <string name="xxl_working_storage_msg">This permission is required so that your can safely download the loan account statement and save it on your phone .You can upload the correct documents for faster loan approval and repayment as well in addition,this permission helps to provuide a very smooth App-using experience users\' application procedure and experience</string>
+    <string name="xxl_working_storage_title">Storage</string>
+    <string name="xxl_working_msg_msg">We will collect and monitor your sms records for credit risk assessment which enables faster loan repayment</string>
+    <string name="xxl_working_msg_title">Message</string>
+    <string name="xxl_working_author_msg">In order to speed up your loan application process we need to obtain the following permissions</string>
+    <string name="xxl_working_author_title">Authorization</string>
+    <string name="str_india_home_contact_text">If you have any questions \u000a Please contact customer service</string>
+    <string name="str_india_login_tip">Agree to the agreement and check</string>
+</resources>

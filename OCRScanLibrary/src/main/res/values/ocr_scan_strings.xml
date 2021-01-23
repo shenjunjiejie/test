@@ -1,0 +1,16 @@
+<resources>
+    <string name="ocr_scan_image_description">error</string>
+    <string name="ocr_scan_activity_title">scan</string>
+    <string name="ocr_scan_activity_title_card">Auto Scan</string>
+    <string name="ocr_scan_reminder_no_card">Place the doc inside the box</string>
+    <string name="ocr_scan_reminder_no_clear">Make sure the doc is\nclear and complete</string>
+    <string name="ocr_scan_reminder_ok">Hold still</string>
+    <string name="ocr_scan_reminder_scan_back">Please scan the back side of the card</string>
+    <string name="ocr_scan_card_front_side">Front Side</string>
+    <string name="ocr_scan_card_back_side">Back Side</string>
+    <string name="ocr_scan_network_error">network error</string>
+    <string name="ocr_scan_license_expired">Device time is not within the validity period of the license, pls use the valid license</string>
+    <string name="ocr_scan_bundle_application_id_error">The package name in the license does not match with application ID, please use the right license file</string>
+    <string name="ocr_scan_license_invalid">Please check DFLicense file</string>
+    <string name="ocr_scan_detect_image_failed">Detect image failed</string>
+</resources>

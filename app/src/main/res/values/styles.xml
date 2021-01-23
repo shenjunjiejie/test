@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textColor">@color/font_c555</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LauncherTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="pop_show_top" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_top_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_top_show_exit</item>
+    </style>
+
+    <style name="pop_show_bottom" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_show_exit</item>
+    </style>
+
+    <style name="pop_show_left" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_left_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_left_show_exit</item>
+    </style>
+
+    <style name="pop_show_right" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_right_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_right_show_exit</item>
+    </style>
+
+    <style name="pop_show_center" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_center_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_center_show_exit</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="WithdrawPageTextStyle">
+        <item name="android:textColor">@color/font_c333</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WithdrawPageValueStyle">
+        <item name="android:textColor">@color/font_c333</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <!-- 应用启动页(StartingWindow)的theme -->
+    <style name="StartingWindowTheme" parent="AppTheme">
+        <!--设置成一张图片 -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="PermissionInfoTitleStyle">
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/font_c333</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+    </style>
+
+    <style name="PermissionInfoBodyStyle">
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_c999</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+
+    <style name="RepaymentLinearLayoutStyle">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+
+    </style>
+
+    <style name="RepaymentTextStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_c333</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+
+
+    <style name="RepaymentValueStyle">
+        <item name="android:gravity">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_c333</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--path=""，是有特殊意义的，它代表根目录，也就是说你可以向其它的应用共享根目录及其子目录下任何一个文件了。-->
+        <external-path path="DCIM/" name="picture_path" />
+        <!--
+         external-path：Environment.getExternalStorageDirectory()
+         name：可以随意定义,项目中使用的时候保持一致就可以了
+         path：表示共享的具体路径, .表示当前路径,即表示整个sd卡路径-->
+        <!--<external-path path="xianyuzhuanzhuan/photo/" name="picture_path"/>-->
+    </paths>
+</resources>

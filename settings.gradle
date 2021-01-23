@@ -1,0 +1,2 @@
+include ':app',":OCRScanLibrary",":DFLivenessLibrary"
+rootProject.name = "My Application"
