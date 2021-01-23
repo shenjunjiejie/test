@@ -1,0 +1,6 @@
+include ':OCRScanLibrary'
+include ':DFLivenessLibrary'
+include ':AppUpdateLibrary'
+include ':liveness'
+include ':app'
+rootProject.name = "EasyWallet"

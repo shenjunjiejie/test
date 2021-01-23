@@ -1,0 +1,158 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.lirongyuns.happyrupees"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("IndiaLoan.jks")
+            storePassword "lirongyun2020"
+            keyAlias "IndiaLoan"
+            keyPassword "lirongyun2020"
+        }
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled false
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            buildConfigField "boolean", "IS_TEST", "true"
+//            buildConfigField "String", "HTTP_HOST", '"https://server.magicrupees.com/"'// 正式环境 API 接口地址
+//            buildConfigField "String", "HTTP_HOST", '"http://n208188y70.zicp.vip/"'// 正式环境 API 接口地址
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+//            zipAlignEnabled true
+//            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "default"
+    //多渠道打包
+    productFlavors {
+        lry_1 {}
+//        lry_2 {}
+//        lry_3 {}
+//        lry_4 {}
+//        lry_5 {}
+//        lry_6 {}
+//        lry_7 {}
+//        lry_8 {}
+//        lry_9 {}
+//        lry_10 {}
+//        lry_11 {}
+//        lry_12 {}
+//        lry_13 {}
+//        lry_14 {}
+//        lry_15 {}
+    }
+}
+
+repositories {
+    mavenCentral()
+//    flatDir {
+//        dirs 'libs'
+//    }
+}
+
+dependencies {
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+    //Test Dependencies
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+
+
+    //doUPIPayment
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //the dependencies of cashfree
+//    implementation 'com.cashfree.pg:android-support-sdk:1.4.2.2'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.3.0'
+    implementation 'com.google.android.gms:play-services-tasks:15.0.1'
+    implementation 'androidx.browser:browser:1.0.0'
+
+    //doGPayPayment
+//    implementation files ("libs/google-pay-client-api-1.0.0.aar")
+
+    implementation 'com.blankj:utilcode:1.29.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation files('libs/india_blue_light__SDK_2.0.0.aar')
+//    implementation files('libs/paySdk2.0.aar')
+    implementation files('libs/guardian_core_v2.0.aar')
+    implementation files('libs/guardian_iqa_v1.0.3.aar')
+    implementation files('libs/cashfreesdk-1.4.2.2-support-library-release.aar')
+
+
+    implementation project(path: ':liveness')
+    implementation project(path: ':AppUpdateLibrary')
+    implementation project(path: ':DFLivenessLibrary')
+    implementation project(path: ':OCRScanLibrary')
+
+    implementation 'org.jetbrains:annotations:15.0'
+    //权限
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.razorpay:checkout:1.5.16'
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+
+    //沉浸式状态栏
+    api 'com.gyf.immersionbar:immersionbar:2.3.3'
+    implementation 'com.zhy:okhttputils:2.4.1'
+
+    implementation 'com.google.android.play:core:1.8.3'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+
+    //AppsFlyer
+    implementation 'com.appsflyer:af-android-sdk:5.4.3'
+    implementation 'com.android.installreferrer:installreferrer:2.1'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

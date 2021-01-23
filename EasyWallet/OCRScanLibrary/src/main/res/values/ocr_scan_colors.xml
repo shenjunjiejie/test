@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ocr_scan_transparent">#00ffffff</color>
+    <color name="ocr_scan_title_text">#333333</color>
+    <color name="ocr_scan_title_bg">#ffffff</color>
+    <color name="ocr_scan_default_text">#333333</color>
+    <color name="ocr_scan_white_text">#ffffff</color>
+    <color name="ocr_scan_result_text">#ff0000</color>
+    <color name="ocr_scan_take">#0095ff</color>
+    <color name="ocr_scan_retake">#beb7b7</color>
+    <color name="ocr_scan_overlay_bg">#ffffff</color>
+    <color name="ocr_scan_laser">#ffffff</color>
+    <color name="ocr_scan_border_ok">#00DF64</color>
+    <color name="ocr_scan_border_error">#ff0000</color>
+    <color name="ocr_scan_border_not_clear">#FF7B00</color>
+    <color name="ocr_scan_card_side_bg">#ccd8d8d8</color>
+    <color name="ocr_scan_loading_bg">#ccffffff</color>
+</resources>

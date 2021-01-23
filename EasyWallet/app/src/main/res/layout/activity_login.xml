@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#A9EADD"
+            android:layout_marginBottom="-22dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="252.65dp"
+            android:layout_height="395.4dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Easy Wallet"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2sp"
+                    android:text="+91"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/login_et"
+                    android:layout_width="202dp"
+                    android:layout_height="58dp"
+                    android:hint="10-digit Mobile Number"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="202dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:text="SEND OTP"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <CheckBox
+                    android:id="@+id/login_cb"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:button="@null"
+                    android:background="@drawable/login_cb_bg" />
+
+                    <TextView
+                        android:id="@+id/login_protocol"
+                        android:layout_width="170dp"
+                        android:layout_height="33dp"
+                        android:onClick="login_protocol"
+                        android:text="I have read and agreed to the Terms of Source Privacy Policy"
+                        android:textColor="#aaaaaa"
+                        android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

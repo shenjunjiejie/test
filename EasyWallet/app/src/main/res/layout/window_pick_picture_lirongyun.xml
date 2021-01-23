@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginBottom="0dp">
+
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_16"
+        android:gravity="center"
+        android:text="Select Image"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/having_line"/>
+
+    <TextView
+        android:id="@+id/tv_picture_album"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_size_16"
+        android:gravity="center"
+        android:text="Photo album"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/having_line"/>-->
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Take a photo"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="16sp" />
+
+</LinearLayout>

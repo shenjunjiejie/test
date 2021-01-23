@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="0-15000" android:titleCondensed="1" />
+    <item android:title="15001-25000" android:titleCondensed="2" />
+    <item android:title="25001-35000" android:titleCondensed="3" />
+    <item android:title="35001-45000" android:titleCondensed="4" />
+    <item android:title="45001-55000" android:titleCondensed="5" />
+    <item android:title="More than 55001" android:titleCondensed="6" />
+
+</menu>

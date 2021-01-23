@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MainFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/certification_iv"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are eligible"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹20,000"
+                android:textColor="#ffffffff"
+                android:textSize="30sp"
+                android:layout_marginTop="18dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/certification_item_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/certification_info_iv"
+                android:layout_marginRight="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_width="67dp"
+                android:layout_height="23dp"
+                android:text="upload"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:background="@drawable/certification_item_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/certification_item_shape">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/certification_center_ocr"
+                android:layout_marginRight="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identify Certification"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+            <Button
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_width="67dp"
+                android:layout_height="23dp"
+                android:text="upload"
+                android:textColor="@color/btn_font_default_color"
+                android:textSize="12sp"
+                android:background="@drawable/certification_item_button"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:textSize="14sp"
+            android:text="Get Loan"
+            android:gravity="center"
+            android:textColor="@color/btn_font_default_color"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/certification_getloan_btn"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+   <!-- <external-path path="$(applicationId)/"  name="files_root" />-->
+    <external-path path="." name="cretin_install" />
+    <external-path name="files_root" path="path" />
+</paths>

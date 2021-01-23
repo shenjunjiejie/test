@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lirongyuns.happyrupees">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="ACCESS_MEDIA_LOCATION"/>
+
+    <!-- appsflyer -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:exported="true"
+        android:fullBackupContent="true"
+        tools:replace="android:fullBackupContent"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:name="com.lirongyuns.happyrupees.MyApp"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.lirongyuns.happyrupees.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_share_path" />
+        </provider>
+
+
+        <!-- facebook ApplicationId -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter> <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- fb_login_protocol_scheme -->
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.lirongyuns.happyrupees.activity.ProtocolDescActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.PermissionDescActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.ProductList" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.AuthorizationActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.PersonalDetailActivity2" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.PersonalDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.OCRActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.AuditStatusActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.CountDownActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.WaitActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.RepaymentActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.WithdrawActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.RepaymentListActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.LoanActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.MyBankCardActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.BindCardActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.ContactUsActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.AboutUsActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.LoginActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="com.lirongyuns.happyrupees.activity.LaunchActivity" android:screenOrientation="portrait" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lirongyuns.happyrupees.activity.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

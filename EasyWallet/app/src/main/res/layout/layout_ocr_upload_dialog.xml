@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shape_ocr_upload_bg"
+    android:paddingTop="26dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLEASE WAIT"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Photo is uploading"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:background="@null"
+        android:id="@+id/btn_ok"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"
+        android:text="@string/str_ucash_button_ok"
+        android:textColor="#ffffa044"
+        android:textSize="@dimen/font_size_18"
+        />
+
+
+</LinearLayout>

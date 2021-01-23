@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="DFOCRScanLoadingDialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/ocr_scan_transparent</item>
+        <item name="android:background">@color/ocr_scan_transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--<style name="LivenessLoadingDialog" parent="android:Theme.Holo.Light.Dialog">-->
+
+</resources>

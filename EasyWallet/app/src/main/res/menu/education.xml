@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Below High School Graduate" android:titleCondensed="0" />
+    <item android:title="Vocational High School Education" android:titleCondensed="1" />
+    <item android:title="University Degrees" android:titleCondensed="2" />
+    <item android:title="University Degree Or Equivalent" android:titleCondensed="3" />
+</menu>

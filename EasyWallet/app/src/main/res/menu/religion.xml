@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="MOSLEM" android:titleCondensed="0" />
+    <item android:title="CHRISTIAN" android:titleCondensed="1" />
+    <item android:title="CATHOLIC" android:titleCondensed="2" />
+    <item android:title="HINDU" android:titleCondensed="3" />
+    <item android:title="BUDDHA" android:titleCondensed="4" />
+    <item android:title="CONFUSIUS" android:titleCondensed="5" />
+    <item android:title="NONE" android:titleCondensed="6" />
+    <item android:title="OTHERS" android:titleCondensed="7" />
+</menu>

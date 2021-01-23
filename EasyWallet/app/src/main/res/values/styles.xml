@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomCheckboxTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@drawable/checkbox_unclick</item>
+        <item name="colorControlActivated">@drawable/checkbox_click</item>
+    </style>
+    <style name="pop_show_top" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_top_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_top_show_exit</item>
+    </style>
+    <style name="pop_show_bottom" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_show_exit</item>
+    </style>
+    <style name="pop_show_left" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_left_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_left_show_exit</item>
+    </style>
+    <style name="pop_show_right" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_right_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_right_show_exit</item>
+    </style>
+
+    <style name="pop_show_center" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_center_show_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_center_show_exit</item>
+    </style>
+</resources>

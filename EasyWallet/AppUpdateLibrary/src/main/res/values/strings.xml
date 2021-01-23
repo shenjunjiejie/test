@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CretinAutoUpdateLibrary</string>
+    <string name="btn_cancel_update">Next Update</string>
+    <string name="btn_update_now">Update Now</string>
+    <string name="tips_new_version">New Version...</string>
+    <string name="download_fail">Download Failed</string>
+    <string name="has_download">Download Successfully</string>
+    <string name="permission_to_store">There is no storage permission, whether to go to open</string>
+    <string name="cancel">Cancel</string>
+    <string name="go_to">Go To</string>
+    <string name="wifi_tips">You are currently on a non-wifi connection. Do you want to continue</string>
+    <string name="tips">Tips</string>
+    <string name="confirm">Confirm</string>
+    <string name="downloading">Downloading...</string>
+    <string name="installing">Installing...</string>
+    <string name="install">Install</string>
+    <string name="apk_file_download_fail">Download Failed</string>
+    <string name="upload_cancel">Canceling will exit the app. Are you sure to cancel? Clicking again will cancel</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="second_menu_item_width">44dp</dimen>
+    <dimen name="second_menu_item_height">44dp</dimen>
+    <dimen name="result_icon_size">18dp</dimen>
+    <dimen name="result_icon_interval">10dp</dimen>
+    <dimen name="app_default_text">18sp</dimen>
+    <dimen name="app_default_left_dimen">16dp</dimen>
+</resources>
